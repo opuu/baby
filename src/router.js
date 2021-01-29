@@ -113,3 +113,5 @@ class Router {
     }
   }
 }
+
+export { Router };

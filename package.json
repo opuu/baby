@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "size": "gzip -9 -c src/baby.js | wc -c | numfmt --to=iec-i --suffix=B --padding=10"
+    "build": "gulp build",
+    "size": "gzip -9 -c dist/bundle.min.js | wc -c | numfmt --to=iec-i --suffix=B --padding=10"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,14 @@
     "framework"
   ],
   "author": "Opu",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-plumber": "^1.2.1"
+  }
 }
