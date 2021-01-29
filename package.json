@@ -1,0 +1,22 @@
+{
+  "name": "babyjs",
+  "version": "0.0.1",
+  "description": "A tiny js framework",
+  "main": "src/baby.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "size": "gzip -9 -c src/baby.js | wc -c | numfmt --to=iec-i --suffix=B --padding=10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opuu/baby.js"
+  },
+  "keywords": [
+    "js",
+    "framework"
+  ],
+  "author": "Opu",
+  "license": "MIT"
+}
